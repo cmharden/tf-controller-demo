@@ -10,4 +10,4 @@ spec:
     kind: GitRepository
     name: tf-controller-demo
     namespace: flux-system
-  approvePlan: ""
+  approvePlan: disable
