@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   path: ./
-  interval: 1m
+  interval: 10m
   sourceRef:
     kind: GitRepository
     name: tf-controller-demo
