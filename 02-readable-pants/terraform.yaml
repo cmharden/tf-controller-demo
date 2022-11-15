@@ -1,11 +1,11 @@
 apiVersion: infra.contrib.fluxcd.io/v1alpha1
 kind: Terraform
 metadata:
-  name: readable-pants
+  name: readable-pants-02
   namespace: tenant-01  # If shared tenant must be correct NS
 spec:
   path: ./
-  interval: 1m
+  interval: 10m
   sourceRef:
     kind: GitRepository
     name: tf-controller-demo
@@ -21,3 +21,7 @@ spec:
 #   - json
 #   - human
 #   type: string
+    
+# Configmaps
+# NAMESPACE                     NAME                                   
+# tenant-01                     tfplan-default-readable-pants          
