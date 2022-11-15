@@ -2,7 +2,7 @@ apiVersion: infra.contrib.fluxcd.io/v1alpha1
 kind: Terraform
 metadata:
   name: helloworld-tf
-  namespace: flux-system
+  namespace: tenant-01
 spec:
   path: ./
   interval: 10m
