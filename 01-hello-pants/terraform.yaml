@@ -1,7 +1,7 @@
 apiVersion: infra.contrib.fluxcd.io/v1alpha1
 kind: Terraform
 metadata:
-  name: demo-02 
+  name: demo-01 
   namespace: tenant-01  # If shared tenant must be correct NS
 spec:
   path: ./
