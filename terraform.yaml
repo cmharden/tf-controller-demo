@@ -4,6 +4,8 @@ metadata:
   name: helloworld-tf
   namespace: tenant-01  # If shared tenant must be correct NS
 spec:
+  storeReadablePlan: human
+  approvePlan: "plan-demo-01-118ceb5269"
   path: ./
   interval: 10m
   sourceRef:
