@@ -1,0 +1,15 @@
+apiVersion: infra.contrib.fluxcd.io/v1alpha1
+kind: Terraform
+metadata:
+  name: approve-pants
+  namespace: tenant-01  # If shared tenant must be correct NS
+spec:
+  path: ./
+  interval: 1m
+  sourceRef:
+    kind: GitRepository
+    name: tf-controller-demo
+    namespace: flux-system
+  approvePlan: ""
+  writeOutputsToSecret:
+    name: tf-output-pants
