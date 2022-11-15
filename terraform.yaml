@@ -8,7 +8,7 @@ spec:
   approvePlan: ""
   force: true
   path: ./
-  interval: 10m
+  interval: 1m
   sourceRef:
     kind: GitRepository
     name: tf-controller-demo
