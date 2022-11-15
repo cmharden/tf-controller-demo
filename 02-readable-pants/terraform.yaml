@@ -11,6 +11,7 @@ spec:
     name: tf-controller-demo
     namespace: flux-system
   storeReadablePlan: human
+  destroyResourcesOnDeletion: true
 
 
 # storeReadablePlan:
