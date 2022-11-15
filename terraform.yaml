@@ -1,0 +1,12 @@
+apiVersion: infra.contrib.fluxcd.io/v1alpha1
+kind: Terraform
+metadata:
+  name: helloworld-tf
+  namespace: flux-system
+spec:
+  path: ./
+  interval: 1m
+  sourceRef:
+    kind: GitRepository
+    name: tf-controller-demo
+    namespace: flux-system
