@@ -4,11 +4,8 @@ metadata:
   name: helloworld-tf
   namespace: tenant-01  # If shared tenant must be correct NS
 spec:
-  storeReadablePlan: human
-  approvePlan: ""
-  force: true
   path: ./
-  interval: 1m
+  interval: 10m
   sourceRef:
     kind: GitRepository
     name: tf-controller-demo
