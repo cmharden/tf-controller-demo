@@ -1,7 +1,7 @@
 apiVersion: infra.contrib.fluxcd.io/v1alpha1
 kind: Terraform
 metadata:
-  name: readable-pants-02
+  name: readable-pants
   namespace: tenant-01  # If shared tenant must be correct NS
 spec:
   path: ./
@@ -12,7 +12,7 @@ spec:
     namespace: flux-system
   storeReadablePlan: human
   destroyResourcesOnDeletion: true
-  RefreshBeforeApply: true
+  refreshBeforeApply: true
 
 
 # storeReadablePlan:
