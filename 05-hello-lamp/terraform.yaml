@@ -10,10 +10,9 @@ spec:
     kind: GitRepository
     name: tf-controller-demo
     namespace: flux-system
-  approvePlan: ""
   writeOutputsToSecret:
     name: tf-output-lamp
   alwaysCleanupRunnerPod: false 
   vars:
   - name: subject  
-    value: lamp
+    value: lamped
