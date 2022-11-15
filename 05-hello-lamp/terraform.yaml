@@ -13,7 +13,6 @@ spec:
   writeOutputsToSecret:
     name: tf-output-lamp
   alwaysCleanupRunnerPod: false 
-  approvePlan: "plan-demo-01-769ce6faed"
   vars:
   - name: subject  
     value: lamped
