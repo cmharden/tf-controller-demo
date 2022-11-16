@@ -22,6 +22,7 @@ spec:
       configMapKeyRef:
         name: lamps
         key: subject-1
+  alwaysCleanupRunnerPod: false
 
 
 
