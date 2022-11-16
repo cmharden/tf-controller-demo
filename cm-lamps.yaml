@@ -4,5 +4,5 @@ metadata:
   name: lamps
   namespace: tenant-01
 data:
-  subject-1: "my-lamp"
-  subject-2: your-lamp
+  subject_1: "my-lamp"
+  subject_2: your-lamp
