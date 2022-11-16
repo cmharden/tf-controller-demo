@@ -2,7 +2,7 @@ apiVersion: infra.contrib.fluxcd.io/v1alpha1
 kind: Terraform
 metadata:
   name: 07-hello-lamp-from
-  namespace: tenant-01  # If shared tenant must be correct NS
+  namespace: tenant-01  
 
 spec:
   path: ../tf-resources
@@ -21,7 +21,7 @@ spec:
     valueFrom:
       configMapKeyRef:
         name: lamps
-        key: subject_1
+        key: subject
   alwaysCleanupRunnerPod: false
 
 
