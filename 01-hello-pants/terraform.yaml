@@ -5,6 +5,7 @@ metadata:
   namespace: tenant-01  # If shared tenant must be correct NS
 spec:
   path: ../tf-resources
+  approvePlan: "plan-demo-01-59687d9476"
   interval: 1m
   sourceRef:
     kind: GitRepository
