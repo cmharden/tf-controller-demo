@@ -17,6 +17,10 @@ spec:
     name: 05-output-pants
 
 
+# Display outputs
+# kubectl -n tenant-01 get secret 05-output-pants -ojsonpath='{.data.hello_world}' | base64 -d 
+
+
 # writeOutputsToSecret:
 #   description: A list of target secrets for the outputs to be written as.
 #   properties:

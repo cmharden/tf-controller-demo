@@ -4,8 +4,8 @@ kind: Kustomization
 resources:
 - tf-runner-rbac.yaml
 #- ./01-hello-pants/terraform.yaml
-#- ./02-readable-pants/terraform.yaml
+- ./02-readable-pants/terraform.yaml
 #- ./03-approve-pants/terraform.yaml 
 #- ./04-auto-pants/terraform.yaml
-- ./05-output-pants/terraform.yaml
+#- ./05-output-pants/terraform.yaml
 #- ./06-hello-lamp/terraform.yaml
