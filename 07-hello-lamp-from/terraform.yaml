@@ -15,14 +15,23 @@ spec:
   approvePlan: "auto"
   writeOutputsToSecret:
     name: 07-output-lamp-from
-  ### Pass variables to Terrafrom
-  vars:
-  - name: subject  
-    valueFrom:
-      configMapKeyRef:
-        name: lamps
-        key: subject
   alwaysCleanupRunnerPod: false
+  ### Pass variables to Terrafrom
+
+  varsFrom:
+  - kind: configMap 
+    name: lamps
+    varsKeys:
+    - subject 
+
+
+
+# vars:
+# - name: subject  
+#   valueFrom:
+#     configMapKeyRef:
+#       name: lamps
+#       key: subject
 
 
 #   kubectl -n tenant-01 get secret tfstate-default-07-hello-lamp-from -ojsonpath='{.data.tfstate}'       | base64 -d | gzip -d 
