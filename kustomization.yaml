@@ -16,5 +16,4 @@ resources:
 #- tf-secret-lamp.yaml
 #- ./08-hello-lamp-from-secret/terraform.yaml
 
-- ./tf-sops-lamp.yaml
-- ./09-hello-lamp-from-sops/terraform.yaml
+- ./09-hello-lamp-from-sops
