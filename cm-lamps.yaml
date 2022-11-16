@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: lamps
+data:
+  subject-1: my-lamp
+  subject-2: your-lamp

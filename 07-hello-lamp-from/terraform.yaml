@@ -1,0 +1,42 @@
+apiVersion: infra.contrib.fluxcd.io/v1alpha1
+kind: Terraform
+metadata:
+  name: 06-hello-lamp
+  namespace: tenant-01  # If shared tenant must be correct NS
+
+spec:
+  path: ../tf-resources
+  interval: 10s
+  sourceRef:
+    kind: GitRepository
+    name: tf-controller-demo
+    namespace: flux-system
+  storeReadablePlan: human
+  approvePlan: "auto"
+  writeOutputsToSecret:
+    name: 06-output-lamp
+  ### Pass variables to Terrafrom
+  vars:
+  - name: subject  
+    valueFrom:
+      configMapKeyRef:
+        name: lamps
+        key: subject-1 
+
+
+
+# vars:
+#   description: List of input variables to set for the Terraform program.
+#   items:
+#     properties:
+#       name:
+#         description: Name is the name of the variable
+#         type: string
+#       value:
+#         x-kubernetes-preserve-unknown-fields: true
+#     required:
+#     - name
+#     type: object
+#   type: array
+
+
