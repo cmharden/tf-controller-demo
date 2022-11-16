@@ -2,10 +2,10 @@ apiVersion: infra.contrib.fluxcd.io/v1alpha1
 kind: Terraform
 metadata:
   name: 04-auto-pants
-  namespace: tenant-01  # If shared tenant must be correct NS
+  namespace: tenant-01  
 spec:
   path: ../tf-resources
-  interval: 30s
+  interval: 10s
   sourceRef:
     kind: GitRepository
     name: tf-controller-demo
@@ -13,8 +13,6 @@ spec:
   storeReadablePlan: human
   ###  Automatically apply plan
   approvePlan: "auto"
-
-
 
 # approvePlan:
 #   description: ApprovePlan specifies name of a plan wanted to approve.

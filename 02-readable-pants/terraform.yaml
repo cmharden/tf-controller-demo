@@ -2,15 +2,15 @@ apiVersion: infra.contrib.fluxcd.io/v1alpha1
 kind: Terraform
 metadata:
   name: 02-readable-pants
-  namespace: tenant-01  # If shared tenant must be correct NS
+  namespace: tenant-01
 spec:
   path: ../tf-resources
-  interval: 30s
+  interval: 10s
   sourceRef:
     kind: GitRepository
     name: tf-controller-demo
     namespace: flux-system
-  ###
+  ### Make the TF plan available in a configmap
   storeReadablePlan: human
 
 
@@ -25,4 +25,4 @@ spec:
     
 # Configmaps
 # NAMESPACE                     NAME                                   
-# tenant-01                     tfplan-default-readable-pants          
+# tenant-01                     tfplan-default-02-readable-pants          

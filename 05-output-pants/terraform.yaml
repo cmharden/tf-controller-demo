@@ -1,15 +1,35 @@
 apiVersion: infra.contrib.fluxcd.io/v1alpha1
 kind: Terraform
 metadata:
-  name: output-pants 
+  name: 05-output-pants 
   namespace: tenant-01  # If shared tenant must be correct NS
 spec:
   path: ../tf-resources
-  interval: 1m
+  interval: 10s
   sourceRef:
     kind: GitRepository
     name: tf-controller-demo
     namespace: flux-system
-  approvePlan: ""
+  storeReadablePlan: human
+  approvePlan: "auto"
+  ### Make Terraform outputs available as a secrte 
   writeOutputsToSecret:
-    name: tf-output-pants
+    name: 05-output-pants
+
+
+# writeOutputsToSecret:
+#   description: A list of target secrets for the outputs to be written as.
+#   properties:
+#     name:
+#       description: Name is the name of the Secret to be written
+#       type: string
+#     outputs:
+#       description: Outputs contain the selected names of outputs to
+#         be written to the secret. Empty array means writing all outputs,
+#         which is default.
+#       items:
+#         type: string
+#       type: array
+#   required:
+#   - name
+#   type: object

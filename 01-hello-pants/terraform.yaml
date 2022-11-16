@@ -4,8 +4,8 @@ metadata:
   name: 01-hello-pants
   namespace: tenant-01  # If shared tenant must be correct NS
 spec:
-  path: ../tf-resources
-  interval: 30s
+  path: ../tf-resources   # Relative to path in GitRepository
+  interval: 10s
   sourceRef:
     kind: GitRepository
     name: tf-controller-demo
