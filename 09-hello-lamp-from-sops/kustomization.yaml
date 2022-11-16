@@ -3,5 +3,4 @@ kind: Kustomization
 
 resources:
 - flux-kustomization.yaml
-- tf-sops-lamp.yaml
 - terraform.yaml
