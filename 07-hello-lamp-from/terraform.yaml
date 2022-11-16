@@ -14,7 +14,7 @@ spec:
   storeReadablePlan: human
   approvePlan: "auto"
   writeOutputsToSecret:
-    name: 06-output-lamp
+    name: 07-output-lamp-from
   ### Pass variables to Terrafrom
   vars:
   - name: subject  
