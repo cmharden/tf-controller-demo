@@ -14,6 +14,9 @@ spec:
   storeReadablePlan: human
 
 
+# Display Tf plan
+# kubectl -n tenant-01 get configmap tfplan-default-02-readable-pants -ojsonpath='{.data.tfplan}' 
+
 # storeReadablePlan:
 #   default: none
 #   description: StoreReadablePlan enables storing the plan in a readable format as a Configmap
