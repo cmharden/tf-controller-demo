@@ -10,8 +10,8 @@ resources:
 #- ./05-output-pants/terraform.yaml
 #- ./06-hello-lamp/terraform.yaml
 
-#- tf-configmap-lamps.yaml
-#- ./07-hello-lamp-from-configmap/terraform.yaml
+- tf-configmap-lamps.yaml
+- ./07-hello-lamp-from-configmap/terraform.yaml
 
 #- ./tf-secret-lamp.yaml
 #- ./08-hello-lamp-from-secret/terraform.yaml
