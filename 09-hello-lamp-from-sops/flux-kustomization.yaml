@@ -13,5 +13,5 @@ spec:
     kind: GitRepository
     name: tf-controller-demo
     namespace: flux-system
-  path: "./09-hello-lamp-from-sops"
+  path: "./secrets"
   prune: true
