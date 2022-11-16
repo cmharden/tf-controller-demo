@@ -11,7 +11,7 @@ resources:
 #- ./06-hello-lamp/terraform.yaml
 #- tf-configmap-lamps.yaml
 #- ./07-hello-lamp-from-configmap/terraform.yaml
-- ./tf-secret-lamp.yaml
+#- ./tf-secret-lamp.yaml
 #- ./08-test-secret/terraform.yaml
 - ./08-hello-lamp-from-secret/terraform.yaml
 #- ./09-hello-lamp-from-sops
