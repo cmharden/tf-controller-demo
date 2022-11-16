@@ -18,7 +18,7 @@ spec:
   alwaysCleanupRunnerPod: false
   ### Pass variables to Terrafrom
   varsFrom:
-  - kind: ConfigMap 
+  - kind: Secrets
     name: tf-secret-lamps
     varsKeys:
     - subject 
