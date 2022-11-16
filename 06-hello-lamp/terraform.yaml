@@ -20,6 +20,10 @@ spec:
   - name: subject  
     value: lamp
 
+
+# Display outputs
+# kubectl -n tenant-01 get secret 06-output-lamp -ojsonpath='{.data.hello_world}' | base64 -d 
+
 # vars:
 #   description: List of input variables to set for the Terraform program.
 #   items:
