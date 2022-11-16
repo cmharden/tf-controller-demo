@@ -19,7 +19,7 @@ spec:
   ### Pass variables to Terrafrom
 
   varsFrom:
-  - kind: configMap 
+  - kind: ConfigMap 
     name: lamps
     varsKeys:
     - subject 
