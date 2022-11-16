@@ -1,8 +1,8 @@
 apiVersion: infra.contrib.fluxcd.io/v1alpha1
 kind: Terraform
 metadata:
-  name: 03-approve-pants
-  namespace: tenant-01  
+  name: 04-auto-pants
+  namespace: tenant-01  # If shared tenant must be correct NS
 spec:
   path: ../tf-resources
   interval: 30s
@@ -11,8 +11,8 @@ spec:
     name: tf-controller-demo
     namespace: flux-system
   storeReadablePlan: human
-  ###  Manually approve plan
-  approvePlan: ""
+  ###  Automatically apply plan
+  approvePlan: "auto"
 
 
 
@@ -22,7 +22,7 @@ spec:
 #     every plan.
 #   type: string
 #   reserved values
-#     ""        - manually approve and apply(the same as not including `approvePlan:`)
+#     ""        - manually approve and apply
 #     "auto"    - automatically resolve drift back to desired state
 #     "disable" - only detect drift in state
 
