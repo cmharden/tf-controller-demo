@@ -21,10 +21,11 @@ spec:
     valueFrom:
       configMapKeyRef:
         name: lamps
-        key: data.subject
+        key: subject-1
   alwaysCleanupRunnerPod: false
 
 
+#   kubectl -n tenant-01 get secret tfstate-default-07-hello-lamp-from -ojsonpath='{.data.tfstate}'       | base64 -d | gzip -d 
 
 # vars:
 #   description: List of input variables to set for the Terraform program.
