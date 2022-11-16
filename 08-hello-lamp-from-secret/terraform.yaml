@@ -24,8 +24,10 @@ spec:
     - subject 
 
 # Display outputs
-# kubectl -n tenant-01 get secret 08-hello-lamp-from-secret  -ojsonpath='{.data.hello_world}' | base64 -d 
+# kubectl -n tenant-01 get secret 08-output-lamp-from-secret   -ojsonpath='{.data.hello_world}' | base64 -d 
 
+# Generate secret
+# kubectl -n tenant-01 create secret generic tf-secret-lamps --from-literal=subject=my-secret-lamp  --from-literal=your-subject=your-secret-lamp   --dry-run -o yaml > tf-secret-lamp.yaml
 
 # varsFrom:
 #   description: List of references to a Secret or a ConfigMap to generate
