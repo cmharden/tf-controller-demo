@@ -1,23 +1,22 @@
 apiVersion: infra.contrib.fluxcd.io/v1alpha1
 kind: Terraform
 metadata:
-  name: readable-pants
+  name: 02-readable-pants
   namespace: tenant-01  # If shared tenant must be correct NS
 spec:
   path: ../tf-resources
-  interval: 10m
+  interval: 30s
   sourceRef:
     kind: GitRepository
     name: tf-controller-demo
     namespace: flux-system
+  ###
   storeReadablePlan: human
-  destroyResourcesOnDeletion: true
-  refreshBeforeApply: true
 
 
 # storeReadablePlan:
 #   default: none
-#   description: StoreReadablePlan enables storing the plan in a readable format in a Configmap
+#   description: StoreReadablePlan enables storing the plan in a readable format as a Configmap
 #   enum:
 #   - none
 #   - json
