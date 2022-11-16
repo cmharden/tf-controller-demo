@@ -1,7 +1,7 @@
 apiVersion: infra.contrib.fluxcd.io/v1alpha1
 kind: Terraform
 metadata:
-  name: 06-hello-lamp
+  name: 07-hello-lamp-from
   namespace: tenant-01  # If shared tenant must be correct NS
 
 spec:
