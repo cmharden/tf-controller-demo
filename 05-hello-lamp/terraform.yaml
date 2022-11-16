@@ -4,7 +4,7 @@ metadata:
   name: hello-lamp
   namespace: tenant-01  # If shared tenant must be correct NS
 spec:
-  path: ./05-hello-lamp
+  path: ../tf-resources
   interval: 1m
   sourceRef:
     kind: GitRepository

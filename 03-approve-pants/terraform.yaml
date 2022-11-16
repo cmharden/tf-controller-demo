@@ -4,7 +4,7 @@ metadata:
   name: approve-pants
   namespace: tenant-01  # If shared tenant must be correct NS
 spec:
-  path: ./
+  path: ../tf-resources
   interval: 1m
   sourceRef:
     kind: GitRepository
