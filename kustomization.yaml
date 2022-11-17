@@ -3,15 +3,13 @@ kind: Kustomization
 
 resources:
 - tf-runner-rbac.yaml
+- tf-configmap-lamps.yaml
 #- ./01-hello-pants/terraform.yaml
 #- ./02-readable-pants/terraform.yaml
 #- ./03-approve-pants/terraform.yaml 
 #- ./04-auto-pants/terraform.yaml
 #- ./05-output-pants/terraform.yaml
 #- ./06-hello-lamp/terraform.yaml
-- tf-configmap-lamps.yaml
 #- ./07-hello-lamp-from-configmap/terraform.yaml
-#- ./tf-secret-lamp.yaml
-- ./08-test-secret/terraform.yaml
-#- ./08-hello-lamp-from-secret
+- ./08-hello-lamp-from-secret
 #- ./09-hello-lamp-from-sops
