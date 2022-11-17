@@ -12,7 +12,8 @@ spec:
     namespace: flux-system
   storeReadablePlan: human
   ###  Manually approve plan
-  approvePlan: "plan-demo-01-c95e8d1d3d"
+  approvePlan: ""
+
 
 
 # approvePlan:
