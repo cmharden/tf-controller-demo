@@ -7,8 +7,8 @@ resources:
 #- ./02-readable-pants/terraform.yaml
 #- ./03-approve-pants/terraform.yaml 
 #- ./04-auto-pants/terraform.yaml
-- ./05-output-pants/terraform.yaml
-#- ./06-hello-lamp/terraform.yaml
+#- ./05-output-pants/terraform.yaml
+- ./06-hello-lamp/terraform.yaml
 #- tf-configmap-lamps.yaml
 #- ./07-hello-lamp-from-configmap/terraform.yaml
 #- ./tf-secret-lamp.yaml
