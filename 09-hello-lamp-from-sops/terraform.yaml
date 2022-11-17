@@ -27,8 +27,8 @@ spec:
 # kubectl -n tenant-01 get secret 09-hello-lamp-from-sops   -ojsonpath='{.data.hello_world}' | base64 -d 
 
 # Generate secret
-# kubectl -n tenant-01 create secret generic tf-sops-lamps --from-literal=subject=my-sops-lamp  --from-literal=your-subject=your-sops-lamp   --dry-run -o yaml > tf-sops-lamp.yaml
-# sops --encrypt --in-place tf-sops-lamp.yaml
+# kubectl -n tenant-01 create secret generic tf-sops-lamps --from-literal=subject=my-sops-lamp  --from-literal=your-subject=your-sops-lamp   --dry-run -o yaml > ./secrets/tf-sops-lamp.yaml
+# sops --encrypt --in-place tf-sops-lamp.yaml   # must be in folder where secret lives
 
 
 
