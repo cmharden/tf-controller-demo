@@ -12,4 +12,4 @@ resources:
 #- ./06-hello-lamp/terraform.yaml
 #- ./07-hello-lamp-from-configmap/terraform.yaml
 #- ./08-hello-lamp-from-secret
-- ./09-hello-lamp-from-sops
+#- ./09-hello-lamp-from-sops
