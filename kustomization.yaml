@@ -4,7 +4,7 @@ kind: Kustomization
 resources:
 - tf-runner-rbac.yaml
 - tf-configmap-lamps.yaml
-#- ./01-hello-pants/terraform.yaml
+- ./01-hello-pants/terraform.yaml
 #- ./02-readable-pants/terraform.yaml
 #- ./03-approve-pants/terraform.yaml 
 #- ./04-auto-pants/terraform.yaml
